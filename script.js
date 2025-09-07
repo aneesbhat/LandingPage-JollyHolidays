@@ -18,15 +18,22 @@ const closeBtn = document.querySelector(".close-popup");
       }
     });
 
-    function showMenu () {
-      var m=document.querySelector(".menu");
-      m.classList.add('show')
-    }
+    // function showMenu () {
+    //   var m=document.querySelector(".menu");
+    //   m.classList.add('show')
+    // }
 
-    function closeMenu () {
-      var m=document.querySelector(".menu");
-      m.classList.add('hide')
-    }
+    // function closeMenu () {
+    //   var m=document.querySelector(".menu");
+    //   m.classList.add('hide')
+    // }
+
+
+    const panel = document.getElementById("panel");
+    document.getElementById("openBtn").onclick = () => panel.style.left = "0";
+    document.getElementById("closeBtn").onclick = () => panel.style.left = "-100%";
+
+
 
 
     const modalOverlay = document.getElementById("modalOverlay");
