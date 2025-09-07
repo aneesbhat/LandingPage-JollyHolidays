@@ -27,3 +27,21 @@ const closeBtn = document.querySelector(".close-popup");
       var m=document.querySelector(".menu");
       m.classList.add('hide')
     }
+
+
+    const modalOverlay = document.getElementById("modalOverlay");
+    const leadModal = document.getElementById("leadModal");
+
+    function openModal() {
+      modalOverlay.style.display = "flex";
+      setTimeout(() => {
+        leadModal.classList.add("active");
+      }, 50);
+    }
+
+    function closeModal() {
+      leadModal.classList.remove("active");
+      setTimeout(() => {
+        modalOverlay.style.display = "none";
+      }, 600);
+    }

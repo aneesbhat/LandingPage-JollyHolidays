@@ -42,7 +42,7 @@
     <div class="hero-content">
       <h1>Affordable Kashmir Tour Packages</h1>
       <p>Top-rated Kashmir holiday trips 2025</p>
-      <a href="#why"><button class="bounce-button"><span>Get Offer!</span></button></a>
+      <a href="#"><button class="bounce-button" onclick="openModal()"><span>Get Offer!</span></button></a>
     </div>
   </section>
 
@@ -68,7 +68,7 @@
       <div class="card-content">
         <h3>Deluxe Valley Explorer </h3>
         <div class="label">Best Seller</div>
-        <div class="price">₹29,400.00 <span>₹32,499.00</span></div>
+        <div class="price">₹₹29,400.00 <span>₹32,499.00</span></div>
 
         
 
@@ -88,7 +88,7 @@
 
 </p>
         
-        <a href="#form" class="btn">Get Offer</a>
+        <button class="btn" onclick="openModal()">Get Offer</button>
       </div>
     </div>
     <div class="card">
@@ -111,7 +111,7 @@
         <i class="fa-solid fa-sailboat"></i> 
 
 </p>
-        <a href="#form" class="btn">Get Offer</a>
+        <button class="btn" onclick="openModal()">Get Offer</button>
       </div>
     </div>
     <div class="card">
@@ -134,7 +134,7 @@
         <i class="fa-solid fa-sailboat"></i> 
 
 </p>
-        <a href="#form" class="btn">Get Offer</a>
+        <button class="btn" onclick="openModal()">Get Offer</button>
       </div>
     </div>
     <div class="card">
@@ -157,7 +157,7 @@
         <i class="fa-solid fa-sailboat"></i> 
 
 </p>
-        <a href="#form" class="btn">Get Offer</a>
+        <button class="btn" onclick="openModal()">Get Offer</button>
       </div>
     </div>
     <div class="card">
@@ -181,7 +181,7 @@
         <i class="fa-solid fa-sailboat"></i> 
 
 </p>
-        <a href="#form" class="btn">Get Offer</a>
+        <button class="btn" onclick="openModal()">Get Offer</button>
       </div>
     </div>
   </section>
@@ -300,6 +300,30 @@
         </div>
         <div class="form-group">
           <input type="tel" required pattern="[0-9]{10}">
+          <span>Phone Number</span>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="leadModal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>Get Best Kashmir Tour Deals</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" required>
+          <span>Full Name</span>
+        </div>
+        <div class="form-group">
+          <input type="email" required>
+          <span>Email Address</span>
+        </div>
+        <div class="form-group">
+          <input type="tel" required>
           <span>Phone Number</span>
         </div>
         <button type="submit" class="submit-btn">Submit</button>
