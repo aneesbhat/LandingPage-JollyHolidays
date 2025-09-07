@@ -1,0 +1,92 @@
+@media only screen and (min-width:200px) and (max-width:575px) {
+
+    .hero-content  {
+        margin-top: 100px;
+        justify-content: center;
+    }
+    .hero-content button {
+        width:200px;
+        
+    }
+
+    #drone-view {
+        padding-bottom:40px;
+    }
+
+    #trending-subheading {
+        margin:0px;
+    }
+
+    .why-us h2 {
+        text-align: center;
+    }
+
+    .why-us ul {
+      padding-bottom:10px;
+    }
+
+    .why-us ul li {
+        text-align:center;
+        width:300px;
+        margin:auto;
+        padding-bottom:5px;
+    }
+
+    .badges {
+        margin:auto;
+    } 
+
+    .contact-mid {
+        flex-direction:column;
+    } 
+
+    .footer-sec1 img {
+        width:300px;
+        margin-left:20%;
+    }
+
+    .footer-sec1 p {
+        line-height:30px;
+    }
+
+    .footer-sec2 {
+        margin-left:0%;
+        
+    }
+
+    .footer-sec2 h3 {
+        text-align:center;
+        margin: auto;
+        font-size: 33px;
+    }
+
+    .footer-sec2 i {
+        text-align:center;
+        margin-left:12px;
+    }
+
+    .social {
+        text-align:center;
+        margin:auto;
+        padding-top:7px;
+        
+    }
+
+    #paragraph {
+        text-align:center;
+        margin:auto;
+    }
+
+    .ticon {
+        display:block;
+    } 
+
+    header nav {
+        display:none;
+    }
+
+    
+    
+
+    
+}
