@@ -1033,7 +1033,7 @@
     }
 
     /* Close button */
-    .close-btn {
+    .close-btns {
       position: absolute;
       top: 20px;
       right: 25px; /* stays on right */
