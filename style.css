@@ -393,8 +393,9 @@
       color: #555;
       margin: 10px 0;
       display:flex;
-      flex-grow: 1;
-      justify-content:space-around;
+      align-items:center;
+      flex-grow:1;
+      justify-content:space-between;
     }
 
     .btn {
