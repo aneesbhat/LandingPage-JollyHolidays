@@ -92,6 +92,10 @@
         right:-60px;
     }
 
+    .offcanvas {
+        transition: 1.5s;
+    }
+
     .nav-links {
         transition:5s;
     }
@@ -99,6 +103,10 @@
     .nav-links a i {
         color:white;
     }
+
+    /* .offcanvas {
+        transition:0.5s all;
+    } */
 
     /* .inclusions {
         margin:0px;
