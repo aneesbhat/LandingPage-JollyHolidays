@@ -85,6 +85,21 @@
         display:none;
     }
 
+    .open-btn {
+        visibility:visible;
+        position:relative;
+        top:0px;
+        right:-60px;
+    }
+
+    .nav-links {
+        transition:5s;
+    }
+
+    .nav-links a i {
+        color:white;
+    }
+
     /* .inclusions {
         margin:0px;
         margin-right:100px;

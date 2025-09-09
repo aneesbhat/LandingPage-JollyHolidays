@@ -29,9 +29,36 @@ const closeBtn = document.querySelector(".close-popup");
     // }
 
 
-    const panel = document.getElementById("panel");
-    document.getElementById("openBtn").onclick = () => panel.style.left = "0";
-    document.getElementById("closeBtn").onclick = () => panel.style.left = "-100%";
+    // const panel = document.getElementById("panel");
+    // document.getElementById("openBtn").onclick = () => panel.style.left = "0%";
+    // document.getElementById("closeBtn").onclick = () => panel.style.left = "-100%";
+
+
+
+    // Get elements
+// const menuBtn = document.querySelector('#openBtn');   // The button to open menu
+// const closeBtns = document.querySelector('#closeBtn'); // The button to close menu
+// const offCanvas = document.querySelector('#panel'); // The off-canvas container
+
+// // Open menu
+// menuBtn.addEventListener('click', () => {
+//   offCanvas.classList.add('show'); // Add "show" class to show off-canvas
+// });
+
+// // Close menu
+// closeBtns.addEventListener('click', () => {
+//   offCanvas.classList.remove('show'); // Remove "show" class to hide off-canvas
+// });
+
+// // Optional: Close when clicking outside the menu
+// document.addEventListener('click', (e) => {
+//   if (offCanvas.classList.contains('show') &&
+//       !offCanvas.contains(e.target) &&
+//       !menuBtn.contains(e.target)) {
+//     offCanvas.classList.remove('show');
+//   }
+// });
+
 
 
 
@@ -51,4 +78,15 @@ const closeBtn = document.querySelector(".close-popup");
       setTimeout(() => {
         modalOverlay.style.display = "none";
       }, 600);
+    }
+
+    // Off-Canvas
+
+
+    function openCanvas() {
+      document.getElementById("myCanvas").style.width = "280px";
+    }
+
+    function closeCanvas() {
+      document.getElementById("myCanvas").style.width = "0";
     }

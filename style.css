@@ -97,7 +97,7 @@
         display:none;
     }
 
-    .menu {
+    #panel {
         width:50%;
         height:100vh;
         position:fixed;
@@ -108,6 +108,12 @@
         
         
     }
+
+    #panel.show {
+        left:0%
+    }
+
+    
 
     .menu img {
         margin-left:20px;
@@ -133,14 +139,7 @@
         right:10px;
     }
 
-    .show {
-        left:0%
-    }
-
-    .hide {
-      left:-50%;
-    }
-
+    
     .hero-content {
       position: relative;
       display:flex;
@@ -954,6 +953,112 @@
       font-size: 13px;
       color: #777;
       margin-top: 25px;
+    }
+
+    .open-btn {
+      background: #00684A;
+      color: #fff;
+      border: none;
+      padding: 12px 18px;
+      font-size: 16px;
+      width:20%;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px; /* moved to right */
+      border-radius: 8px;
+      visibility:hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .open-btn:hover {
+      background: #009966;
+      transform: scale(1.1);
+    }
+
+    /* Off-canvas */
+    .offcanvas {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: 0; /* changed from left to right */
+      background: #007b5e;
+      overflow-x: hidden;
+      transition: 0.4s;
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Content */
+    .offcanvas-content {
+      padding: 20px;
+      color: #fff;
+    }
+
+    .offcanvas h2 {
+      text-align: center;
+      margin: 0 0 30px 0;
+    }
+
+    /* Navigation links with icons */
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      transition:5s all;
+    }
+
+    .nav-links a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 12px;
+      border-radius: 6px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255,255,255,0.2);
+      transform: scale(1.05);
+    }
+
+    .nav-links i {
+      font-size: 20px;
+    }
+
+    /* Close button */
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 25px; /* stays on right */
+      font-size: 28px;
+      color: #fff;
+      cursor: pointer;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .close-btn:hover {
+      color: #ffd700;
+      transform: scale(1.2);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      display:flex;
+    }
+
+    .footer-sec2 i {
+      color:white;
     }
 
 
