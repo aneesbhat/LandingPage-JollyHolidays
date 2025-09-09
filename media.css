@@ -92,10 +92,6 @@
         right:-60px;
     }
 
-    .offcanvas {
-        transition: 1.5s;
-    }
-
     .nav-links {
         transition:5s;
     }
