@@ -390,7 +390,7 @@
     .inclusions {
       font-size: 0.9rem;
       color: #555;
-      margin: 10px 0;
+      margin: 10px 0px;
       display:flex;
       align-items:center;
       flex-grow:1;
